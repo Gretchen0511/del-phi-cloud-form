@@ -1,0 +1,20 @@
+{
+  "name": "delphi-cloud-form",
+  "version": "1.0.0",
+  "description": "心事侦探社第一轮专家咨询云端表单：Render + Neon PostgreSQL",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
