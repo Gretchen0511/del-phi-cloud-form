@@ -48,6 +48,8 @@ async function ensureTable() {
 
 app.get('/health', (_req, res) => res.json({ ok: true }));
 
+app.get('/admin', (_req, res) => res.sendFile(path.join(__dirname, 'public', 'admin.html')));
+
 app.post('/api/responses', async (req, res) => {
   try {
     const payload = req.body;
