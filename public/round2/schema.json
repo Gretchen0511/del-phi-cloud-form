@@ -1,0 +1,2724 @@
+{
+  "version": "delphi-round2-20261016-v1",
+  "fields": [
+    {
+      "id": "expert_id",
+      "label": "专家编号",
+      "type": "short",
+      "required": true
+    },
+    {
+      "id": "fill_date",
+      "label": "填写日期",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "read_summary",
+      "label": "是否已阅读本轮修订摘要",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    {
+      "id": "materials_reviewed",
+      "label": "是否已查看最新版核心材料",
+      "type": "multi",
+      "required": true,
+      "options": [
+        "规则说明书",
+        "情绪与需求简释",
+        "词盘／卡牌",
+        "屏风与计分说明"
+      ]
+    },
+    {
+      "id": "A1",
+      "label": "A1 背景设定与游戏主题一致，能帮助大学生快速进入角色。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "A1_suggestion",
+      "label": "A1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "A2",
+      "label": "A2 “表达—倾听—同理猜测—解释共鸣”的核心机制能够支持情绪识别与需求理解。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "A2_suggestion",
+      "label": "A2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "A3",
+      "label": "A3 背景叙事与大学生心理健康教育活动的严肃性和趣味性保持适当平衡。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "A3_suggestion",
+      "label": "A3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "A4",
+      "label": "A4 将游戏明确界定为轻量化心理教育体验，而非测评、诊断或咨询替代，是恰当的。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "A4_suggestion",
+      "label": "A4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "A5",
+      "label": "A5 允许虚构或半虚构故事、不追问现实隐私等安全边界与游戏机制相匹配。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "A5_suggestion",
+      "label": "A5 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "A6",
+      "label": "A6 本项目总体适合在大学生心理健康教育相关场景中使用。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "A6_suggestion",
+      "label": "A6 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "A7",
+      "label": "A7. 对项目定位、背景或角色命名的修改建议：",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B1",
+      "label": "B1 删除容易与“可控感”混淆的“稳定感”，处理恰当。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B1_suggestion",
+      "label": "B1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B2",
+      "label": "B2 需求词数量由18项调整为17项，兼顾覆盖面与游戏操作负担。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B2_suggestion",
+      "label": "B2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B3",
+      "label": "B3 “自我决定、被肯定、目标意义”换为“自主选择、被认可、目标感”等表述，表述更加日常、易懂，处理恰当。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B3_suggestion",
+      "label": "B3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B4",
+      "label": "B4 保留“不被排斥”，并用“即使不够合群、不够完美，也仍然被允许留在关系里。”辅助解释，处理恰当。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B4_suggestion",
+      "label": "B4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B5",
+      "label": "B5 现有17项需求词能够覆盖大学生常见校园、人际、学业与成长情境。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B5_suggestion",
+      "label": "B5 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B6",
+      "label": "B6 情绪词保持24项，数量与难度适合大学生在词盘中识别和押注。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B6_suggestion",
+      "label": "B6 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B7",
+      "label": "B7 情绪词、需求词简析能够支持新手理解。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B7_suggestion",
+      "label": "B7 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "B8",
+      "label": "B8 修订后的情绪词与需求词之间概念层级清楚，能够支持游戏目标。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "B8_suggestion",
+      "label": "B8 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_1",
+      "label": "不被排斥",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_1_suggestion",
+      "label": "不被排斥：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_2",
+      "label": "自主选择",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_2_suggestion",
+      "label": "自主选择：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_3",
+      "label": "被认可",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_3_suggestion",
+      "label": "被认可：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_4",
+      "label": "目标感",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_4_suggestion",
+      "label": "目标感：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_5",
+      "label": "被回应／被在乎",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_5_suggestion",
+      "label": "被回应／被在乎：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_6",
+      "label": "可控感／解决办法",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_6_suggestion",
+      "label": "可控感／解决办法：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_7",
+      "label": "平静／开心",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_7_suggestion",
+      "label": "平静／开心：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_8",
+      "label": "低落／失望／委屈",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_8_suggestion",
+      "label": "低落／失望／委屈：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T50_9",
+      "label": "尴尬／羞耻",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T50_9_suggestion",
+      "label": "尴尬／羞耻：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_1",
+      "label": "故事线索卡 · 规则清晰",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_1_suggestion",
+      "label": "故事线索卡 · 规则清晰：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_2",
+      "label": "故事线索卡 · 趣味参与",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_2_suggestion",
+      "label": "故事线索卡 · 趣味参与：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_3",
+      "label": "故事线索卡 · 教育价值",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_3_suggestion",
+      "label": "故事线索卡 · 教育价值：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_4",
+      "label": "故事线索卡 · 安全可控",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_4_suggestion",
+      "label": "故事线索卡 · 安全可控：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_5",
+      "label": "故事线索卡 · 总体适合",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_5_suggestion",
+      "label": "故事线索卡 · 总体适合：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_6",
+      "label": "回应线索卡 · 规则清晰",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_6_suggestion",
+      "label": "回应线索卡 · 规则清晰：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_7",
+      "label": "回应线索卡 · 趣味参与",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_7_suggestion",
+      "label": "回应线索卡 · 趣味参与：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_8",
+      "label": "回应线索卡 · 教育价值",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_8_suggestion",
+      "label": "回应线索卡 · 教育价值：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_9",
+      "label": "回应线索卡 · 安全可控",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_9_suggestion",
+      "label": "回应线索卡 · 安全可控：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_10",
+      "label": "回应线索卡 · 总体适合",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_10_suggestion",
+      "label": "回应线索卡 · 总体适合：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_11",
+      "label": "图像线索卡 · 规则清晰",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_11_suggestion",
+      "label": "图像线索卡 · 规则清晰：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_12",
+      "label": "图像线索卡 · 趣味参与",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_12_suggestion",
+      "label": "图像线索卡 · 趣味参与：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_13",
+      "label": "图像线索卡 · 教育价值",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_13_suggestion",
+      "label": "图像线索卡 · 教育价值：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_14",
+      "label": "图像线索卡 · 安全可控",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_14_suggestion",
+      "label": "图像线索卡 · 安全可控：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "play_15",
+      "label": "图像线索卡 · 总体适合",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "play_15_suggestion",
+      "label": "图像线索卡 · 总体适合：修改建议",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "C1",
+      "label": "C1 由单一玩法改为三种玩法，能够有效回应试玩中“故事整合负担偏高”的问题。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "C1_suggestion",
+      "label": "C1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "C2",
+      "label": "C2 三种玩法差异明确，不会使规则体系显得重复或碎片化。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "C2_suggestion",
+      "label": "C2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "C3",
+      "label": "C3 三种玩法难度梯度合理。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "C3_suggestion",
+      "label": "C3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "C4",
+      "label": "C4 三种玩法均保留对情绪与需求的倾听、推测和验证，不偏离项目目标。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "C4_suggestion",
+      "label": "C4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "C5",
+      "label": "C5 三种玩法并存适合作为正式版的结构。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "C5_suggestion",
+      "label": "C5 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D1",
+      "label": "D1 三类得分的定义与触发条件清楚，带领者和玩家能够准确区分。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D1_suggestion",
+      "label": "D1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D2",
+      "label": "D2 更新后的得分机会比试玩版更充分，能够减少“得分太难”的挫败感。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D2_suggestion",
+      "label": "D2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D3",
+      "label": "D3 计分规则兼顾倾听同理、讲述表达和反思分享。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D3_suggestion",
+      "label": "D3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D4",
+      "label": "D4 新增“感触分”能促进玩家表达新理解或多元视角，符合心理教育目标。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D4_suggestion",
+      "label": "D4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D5",
+      "label": "D5 感触分强调自愿且不以真实隐私披露为条件，安全边界清楚。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D5_suggestion",
+      "label": "D5 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D6",
+      "label": "D6 计分过程不会显著打断故事、讨论和共鸣交流。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D6_suggestion",
+      "label": "D6 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D7",
+      "label": "D7 计分复杂度与2—6人游戏规模相匹配。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D7_suggestion",
+      "label": "D7 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "D8",
+      "label": "D8 计分规则总体公平、可操作，适合进入正式版。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "D8_suggestion",
+      "label": "D8 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T64_1",
+      "label": "筹码分",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T64_1_suggestion",
+      "label": "筹码分：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T64_2",
+      "label": "共鸣分",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T64_2_suggestion",
+      "label": "共鸣分：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T64_3",
+      "label": "感触分",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "保留",
+        "修改",
+        "删除"
+      ]
+    },
+    {
+      "id": "T64_3_suggestion",
+      "label": "感触分：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "E1",
+      "label": "E1 独立规则书能够使玩家在示范后自行完成游戏，并降低带领者反复解释的需要。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "E1_suggestion",
+      "label": "E1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "E2",
+      "label": "E2 “情绪与需求简释”中的定义、说明足以支持理解。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "E2_suggestion",
+      "label": "E2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "E3",
+      "label": "E3 讲述者屏风能够保护暗牌选择、减少信息泄露并提升角色沉浸。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "E3_suggestion",
+      "label": "E3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "E4",
+      "label": "E4 将适用人数明确为2—6人，兼顾可启动性、互动丰富度和单局时长。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "E4_suggestion",
+      "label": "E4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "E5",
+      "label": "E5 正式游戏前设置一轮示范局，是必要且可行的。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "E5_suggestion",
+      "label": "E5 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "E6",
+      "label": "E6 修订后的整套材料便于在课堂、团体活动或心理主题活动中部署。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "E6_suggestion",
+      "label": "E6 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T69_1",
+      "label": "玩家规则书",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "必要",
+        "可选",
+        "不需求"
+      ]
+    },
+    {
+      "id": "T69_1_suggestion",
+      "label": "玩家规则书：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T69_2",
+      "label": "情绪与需求简释书",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "必要",
+        "可选",
+        "不需求"
+      ]
+    },
+    {
+      "id": "T69_2_suggestion",
+      "label": "情绪与需求简释书：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T69_3",
+      "label": "讲述者屏风",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "必要",
+        "可选",
+        "不需求"
+      ]
+    },
+    {
+      "id": "T69_3_suggestion",
+      "label": "讲述者屏风：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "T69_4",
+      "label": "小型押注骰子",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "必要",
+        "可选",
+        "不需求"
+      ]
+    },
+    {
+      "id": "T69_4_suggestion",
+      "label": "小型押注骰子：建议表述或说明",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F1",
+      "label": "F1 设置跳过、暂停和退出权利，能够保障参与自愿性。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F1_suggestion",
+      "label": "F1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F2",
+      "label": "F2 “不追问、不评价、不嘲笑、不外传”的小组约定具体且可执行。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F2_suggestion",
+      "label": "F2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F3",
+      "label": "F3 感触分不与真实披露深度挂钩，能够避免奖励机制诱导隐私暴露。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F3_suggestion",
+      "label": "F3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F4",
+      "label": "F4 由接受过规则培训的教师、辅导员、心理委员或活动带领者组织，更符合安全要求。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F4_suggestion",
+      "label": "F4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F5",
+      "label": "F5 规则书对情绪不适、冲突或敏感内容的暂停与处理提示足够明确。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F5_suggestion",
+      "label": "F5 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F6",
+      "label": "F6 游戏适合作为心理健康教育或团体体验工具，但不应替代个体评估与专业服务。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F6_suggestion",
+      "label": "F6 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F7",
+      "label": "F7 修订版整体风险可控，具备进入下一阶段应用的条件。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "F7_suggestion",
+      "label": "F7 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "F8",
+      "label": "应用场景判断（可多选）",
+      "type": "multi",
+      "required": true,
+      "options": [
+        "心理健康教育课程",
+        "新生适应／班级活动",
+        "团体辅导或成长小组",
+        "心理委员／朋辈培训",
+        "校园心理主题活动",
+        "一般社团／团队活动",
+        "不建议在无带领者场景使用",
+        "其他"
+      ]
+    },
+    {
+      "id": "F8_other",
+      "label": "其他应用场景",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "G1",
+      "label": "G1 本轮修订充分回应了第一轮专家咨询中的主要意见。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "G1_suggestion",
+      "label": "G1 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "G2",
+      "label": "G2 本轮修订充分回应了小范围试玩中发现的主要问题。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "G2_suggestion",
+      "label": "G2 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "G3",
+      "label": "G3 修订后的体系完整，词盘、玩法、计分和材料之间相互一致。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "G3_suggestion",
+      "label": "G3 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "G4",
+      "label": "G4 修订版兼具心理教育价值、趣味性、可操作性和安全性。",
+      "type": "score",
+      "required": true
+    },
+    {
+      "id": "G4_suggestion",
+      "label": "G4 修改建议（如评分≤3，请说明；选填）",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "final_decision",
+      "label": "最终处置意见（单选）",
+      "type": "choice",
+      "required": true,
+      "options": [
+        "A：总体适合形成正式应用版本",
+        "B：小幅修改后定稿，无需再次进行整轮专家咨询",
+        "C：需较大修改，建议修订后再次提交专家复评",
+        "D：暂不建议进入下一阶段"
+      ]
+    },
+    {
+      "id": "open_81",
+      "label": "（1）您认为本轮修订最成功、最应保留的部分是：",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "open_85",
+      "label": "（2）正式定稿前必须修改的问题是：",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "open_90",
+      "label": "（3）其他意见或可用于论文方法与讨论部分的提醒：",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "blocks": [
+    {
+      "text": "修订版 · 专家复评",
+      "heading": false
+    },
+    {
+      "text": "《心事侦探社》",
+      "heading": true
+    },
+    {
+      "text": "第二轮德尔菲专家咨询问卷",
+      "heading": true
+    },
+    {
+      "text": "基于第一轮专家意见与小范围试玩反馈的修订版复评",
+      "heading": false
+    },
+    {
+      "fields": [
+        {
+          "id": "expert_id",
+          "label": "专家编号",
+          "type": "short",
+          "required": true
+        },
+        {
+          "id": "fill_date",
+          "label": "填写日期",
+          "type": "date",
+          "required": true
+        }
+      ]
+    },
+    {
+      "text": "本轮用于确认修订内容是否充分回应第一轮咨询与试玩发现，并形成正式应用版本。",
+      "heading": false
+    },
+    {
+      "text": "2026年7月",
+      "heading": false
+    },
+    {
+      "text": "致专家",
+      "heading": true
+    },
+    {
+      "text": "尊敬的专家：",
+      "heading": false
+    },
+    {
+      "text": "感谢您参加《心事侦探社》第一轮专家咨询。本项目拟开发一套面向大学生心理健康教育场景的轻量化情绪与需求故事推理游戏，核心过程为“表达—倾听—同理猜测—解释共鸣”。第一轮咨询完成后，研究组结合专家意见开展了小范围试玩，并据此对需求词盘、玩法、计分、材料、人数和叙事背景进行了集中修订。",
+      "heading": false
+    },
+    {
+      "text": "本轮不再重复评价第一轮中已取得较高共识且未发生实质变化的全部内容，重点复评：修订是否有据、处理是否恰当、规则是否清晰、材料是否可操作、风险是否可控，以及是否具备定稿条件。您的意见将仅用于研究与游戏修订，结果以汇总方式呈现。",
+      "heading": false
+    },
+    {
+      "text": "请您在审阅随问卷提供的最新版规则书、情绪与需求简释及核心材料后作答。感谢您的专业支持。",
+      "heading": false
+    },
+    {
+      "text": "填写说明",
+      "heading": true
+    },
+    {
+      "text": "除特别注明外，各题均采用5点评分：1＝非常不同意，2＝不太同意，3＝一般，4＝比较同意，5＝非常同意。",
+      "heading": false
+    },
+    {
+      "text": "“保留／修改／删除”题用于形成明确的内容处置意见，可结合评分作答。",
+      "heading": false
+    },
+    {
+      "text": "建议先阅读“第一部分：反馈与修订摘要”，再完成复评。",
+      "heading": false
+    },
+    {
+      "text": "作答确认",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "read_summary",
+          "label": "是否已阅读本轮修订摘要",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials_reviewed",
+          "label": "是否已查看最新版核心材料",
+          "type": "multi",
+          "required": true,
+          "options": [
+            "规则说明书",
+            "情绪与需求简释",
+            "词盘／卡牌",
+            "屏风与计分说明"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "第一部分　前轮反馈与修订依据",
+      "heading": true
+    },
+    {
+      "text": "1. 第一轮德尔菲结果摘要",
+      "heading": true
+    },
+    {
+      "text": "第一轮共纳入16份有效专家问卷。总体判断积极，但词语日常化、玩法上手负担、计分解释和安全边界仍需通过修订与复评进一步收敛。",
+      "heading": false
+    },
+    {
+      "row": [
+        "评价内容",
+        "第一轮结果",
+        "本轮处理"
+      ]
+    },
+    {
+      "row": [
+        "教育价值",
+        "均值5.00",
+        "维持核心目标，不重复逐项评价"
+      ]
+    },
+    {
+      "row": [
+        "大学生群体适配性",
+        "均值5.00",
+        "结合试玩再次确认应用边界"
+      ]
+    },
+    {
+      "row": [
+        "游戏机制总体评价",
+        "均值4.75",
+        "重点复评三种玩法与新计分"
+      ]
+    },
+    {
+      "row": [
+        "需求词库总体评价",
+        "均值4.67",
+        "删去“稳定感”，补充释义与辨析"
+      ]
+    },
+    {
+      "row": [
+        "情绪词库总体评价",
+        "均值4.73",
+        "修正错别字／格式，强化易混淆词解释"
+      ]
+    },
+    {
+      "row": [
+        "版本推进意见",
+        "12人（75%）建议进入下一阶段；4人（25%）建议修改后进入",
+        "反馈修订后开展第二轮定稿复评"
+      ]
+    },
+    {
+      "text": "2. 小范围试玩结果摘要",
+      "heading": true
+    },
+    {
+      "text": "试玩后共获得6份有效学生反馈。鉴于样本量较小，以下结果仅作可接受性与修订线索的描述性证据，不作效果推断。20个封闭题总体均值为4.65分。",
+      "heading": false
+    },
+    {
+      "row": [
+        "维度",
+        "均值",
+        "主要信息"
+      ]
+    },
+    {
+      "row": [
+        "规则可理解性",
+        "4.75",
+        "总体可理解；个别玩家需经过数轮才能完全掌握"
+      ]
+    },
+    {
+      "row": [
+        "趣味性与参与感",
+        "4.58",
+        "故事、押注和图片讲述受到欢迎"
+      ]
+    },
+    {
+      "row": [
+        "心理教育价值",
+        "4.67",
+        "倾听练习得分最高；理解情绪背后需求仍可加强"
+      ]
+    },
+    {
+      "row": [
+        "词库与材料适配性",
+        "4.50",
+        "相对最低；需求词易懂性均值4.17，4—5分比例66.7%"
+      ]
+    },
+    {
+      "row": [
+        "安全性与推广意愿",
+        "4.75",
+        "主观安全与推广意愿较高"
+      ]
+    },
+    {
+      "text": "3. 试玩反馈—修订对应关系",
+      "heading": true
+    },
+    {
+      "row": [
+        "试玩／专家反馈",
+        "证据线索",
+        "本轮修订"
+      ]
+    },
+    {
+      "row": [
+        "“稳定感”与“可控感”难区分",
+        "6名试玩者中3人明确提及；第一轮也提示需求词需日常化",
+        "删除“稳定感”，需求词由18项减为17项；在简释书中增加近义辨析"
+      ]
+    },
+    {
+      "row": [
+        "一次讲故事需整合多类卡片，初学负担偏高",
+        "3名试玩者提到情绪、需求与故事整合困难",
+        "由单一路径改为三种玩法，提供不同表达门槛与材料入口"
+      ]
+    },
+    {
+      "row": [
+        "得分不易、奖励反馈不足",
+        "多名试玩者提出增加得分／奖励、表达可获得分数",
+        "更新计分规则，新增“感触分”，保留押注与共鸣导向"
+      ]
+    },
+    {
+      "row": [
+        "初学规则与多人局时长需控制",
+        "有试玩者需数轮理解；提出人数过多时单局偏长",
+        "增加独立规则书与示范流程；限定2—6人，并给出局数／时长建议"
+      ]
+    },
+    {
+      "row": [
+        "材料辨识与操作便利性需提升",
+        "提出筹码更小、更好区分，说明材料需统一",
+        "更换小巧押注骰子，增加屏风，统一词盘文字与版式"
+      ]
+    },
+    {
+      "row": [
+        "押注、故事和图片表达最具吸引力",
+        "开放反馈反复提及上述环节",
+        "三种玩法均保留“表达—倾听—同理猜测—解释共鸣”核心循环"
+      ]
+    },
+    {
+      "row": [
+        "部分情绪词、需求词不易理解，容易混淆",
+        "提到低落/失望，迷茫/焦虑，被保护和被在乎等",
+        "设计情绪词、需求词简要解析说明"
+      ]
+    },
+    {
+      "text": "4. 本轮送审版本的关键变化",
+      "heading": true
+    },
+    {
+      "row": [
+        "模块",
+        "第一轮／试玩版",
+        "第二轮送审版"
+      ]
+    },
+    {
+      "row": [
+        "定位与背景",
+        "教育目的明确，叙事外壳与边界说明不足",
+        "设定“心事侦探社”背景；强调非测评、非诊断、非咨询替代"
+      ]
+    },
+    {
+      "row": [
+        "需求词盘",
+        "18项，含“稳定感”",
+        "根据第一轮德尔菲专家建议，形成当前17项。删除“稳定感”；修正错别字和呈现问题，增加释义与辨析。其中，“自我决定、被肯定、目标意义”换为“自主选择、被认可、目标感”等表述，表述更加日常、易懂，处理恰当。"
+      ]
+    },
+    {
+      "row": [
+        "情绪词盘",
+        "24项，个别文字／格式需校对",
+        "保持24项，完成文字与版式校对，增加释义与辨析"
+      ]
+    },
+    {
+      "row": [
+        "玩法",
+        "以线索为入口的单一路径，整合故事与暗号要求较高",
+        "设置“故事卡”“回应卡”“图像卡”三种玩法"
+      ]
+    },
+    {
+      "row": [
+        "计分",
+        "以押中与共鸣为主，初学者感到得分不易",
+        "明确筹码分、共鸣分，新增感触分"
+      ]
+    },
+    {
+      "row": [
+        "材料",
+        "卡牌、词盘与较大的押注筹码",
+        "增加规则书、情绪与需求简释、讲述者屏风；更换小巧押注骰子"
+      ]
+    },
+    {
+      "row": [
+        "人数与流程",
+        "试玩建议人数不够统一",
+        "明确2—6人，并提供示范局、轮数和时长建议"
+      ]
+    },
+    {
+      "row": [
+        "评价重点  本轮评价对象是“修订后的整体方案”，不是重新证明游戏有效。请优先判断内容适切性、规则清晰性、可操作性和安全性。"
+      ]
+    },
+    {
+      "text": "第二部分　修订版重点复评",
+      "heading": true
+    },
+    {
+      "text": "A. 项目定位、背景与核心框架",
+      "heading": true
+    },
+    {
+      "row": [
+        "背景设定：夜色中，一间“心事侦探社”接收那些尚未被好好听见的心事。玩家分别担任“讲述者”和“心事侦探”，通过“表达—倾听—同理猜测—解释共鸣”，寻找故事中的“情绪”与“需求”。该背景仅提供游戏化叙事，不模拟咨询关系，也不作心理诊断。"
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "A1",
+          "label": "A1 背景设定与游戏主题一致，能帮助大学生快速进入角色。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "A1_suggestion",
+          "label": "A1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "A2",
+          "label": "A2 “表达—倾听—同理猜测—解释共鸣”的核心机制能够支持情绪识别与需求理解。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "A2_suggestion",
+          "label": "A2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "A3",
+          "label": "A3 背景叙事与大学生心理健康教育活动的严肃性和趣味性保持适当平衡。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "A3_suggestion",
+          "label": "A3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "A4",
+          "label": "A4 将游戏明确界定为轻量化心理教育体验，而非测评、诊断或咨询替代，是恰当的。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "A4_suggestion",
+          "label": "A4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "A5",
+          "label": "A5 允许虚构或半虚构故事、不追问现实隐私等安全边界与游戏机制相匹配。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "A5_suggestion",
+          "label": "A5 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "A6",
+          "label": "A6 本项目总体适合在大学生心理健康教育相关场景中使用。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "A6_suggestion",
+          "label": "A6 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "A7",
+          "label": "A7. 对项目定位、背景或角色命名的修改建议：",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "B. 需求词盘与情绪词盘",
+      "heading": true
+    },
+    {
+      "text": "1. 当前词盘清单",
+      "heading": true
+    },
+    {
+      "row": [
+        "词盘",
+        "现版本内容"
+      ]
+    },
+    {
+      "row": [
+        "需求词（17项）",
+        "陪伴、不被排斥、被在乎、被回应；个人边界、自主选择；被尊重、被认可、公平对待；放松休息、被保护、不被指责；目标感、自我接纳；成就感、可控感、解决办法"
+      ]
+    },
+    {
+      "row": [
+        "情绪词（24项）",
+        "平静、开心、兴奋、感动、爱慕；好奇、惊讶；无聊、低落、失望、委屈、无助、孤独；迷茫、焦虑、害怕；生气、厌恶、嫉妒、挫败；尴尬、后悔、自责、羞耻"
+      ]
+    },
+    {
+      "row": [
+        "修订说明  第一轮后优先处理：删除“稳定感”；将部分表达简化为“自主选择、被认可、目标感”；保留“不被排斥”并在简释书中解释为“即使不够合群、不够完美，也仍然被允许留在关系里”；针对“被回应—被在乎”“可控感—解决办法”“尴尬—羞耻”等增加辨析示例。"
+      ]
+    },
+    {
+      "text": "2. 词盘修订适切性",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "B1",
+          "label": "B1 删除容易与“可控感”混淆的“稳定感”，处理恰当。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B1_suggestion",
+          "label": "B1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B2",
+          "label": "B2 需求词数量由18项调整为17项，兼顾覆盖面与游戏操作负担。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B2_suggestion",
+          "label": "B2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B3",
+          "label": "B3 “自我决定、被肯定、目标意义”换为“自主选择、被认可、目标感”等表述，表述更加日常、易懂，处理恰当。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B3_suggestion",
+          "label": "B3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B4",
+          "label": "B4 保留“不被排斥”，并用“即使不够合群、不够完美，也仍然被允许留在关系里。”辅助解释，处理恰当。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B4_suggestion",
+          "label": "B4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B5",
+          "label": "B5 现有17项需求词能够覆盖大学生常见校园、人际、学业与成长情境。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B5_suggestion",
+          "label": "B5 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B6",
+          "label": "B6 情绪词保持24项，数量与难度适合大学生在词盘中识别和押注。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B6_suggestion",
+          "label": "B6 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B7",
+          "label": "B7 情绪词、需求词简析能够支持新手理解。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B7_suggestion",
+          "label": "B7 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "B8",
+          "label": "B8 修订后的情绪词与需求词之间概念层级清楚，能够支持游戏目标。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "B8_suggestion",
+          "label": "B8 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "3. 重点词语处置意见",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "T50_1",
+          "label": "不被排斥",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_1_suggestion",
+          "label": "不被排斥：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_2",
+          "label": "自主选择",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_2_suggestion",
+          "label": "自主选择：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_3",
+          "label": "被认可",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_3_suggestion",
+          "label": "被认可：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_4",
+          "label": "目标感",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_4_suggestion",
+          "label": "目标感：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_5",
+          "label": "被回应／被在乎",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_5_suggestion",
+          "label": "被回应／被在乎：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_6",
+          "label": "可控感／解决办法",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_6_suggestion",
+          "label": "可控感／解决办法：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_7",
+          "label": "平静／开心",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_7_suggestion",
+          "label": "平静／开心：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_8",
+          "label": "低落／失望／委屈",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_8_suggestion",
+          "label": "低落／失望／委屈：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T50_9",
+          "label": "尴尬／羞耻",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T50_9_suggestion",
+          "label": "尴尬／羞耻：建议表述或说明",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "C. 三种玩法",
+      "heading": true
+    },
+    {
+      "text": "1. 玩法摘要",
+      "heading": true
+    },
+    {
+      "row": [
+        "玩法",
+        "主要入口与流程",
+        "主要设计目的"
+      ]
+    },
+    {
+      "row": [
+        "故事线索卡",
+        "给出一个具体的校园/生活情境，讲述者讲述卡牌内容；侦探同理推测讲述者在该故事中可能有的情绪需求。",
+        "情境清楚、代入容易，适合新手快速进入游戏。"
+      ]
+    },
+    {
+      "row": [
+        "回应线索卡",
+        "给出一个需要回应的场景，讲述者直接说出一句自己的回应；侦探从讲述者的一句话回应判断其情绪与需求。",
+        "聚焦人际互动场景，代入练习倾听、共情和回应，适合熟悉规则后的标准局。"
+      ]
+    },
+    {
+      "row": [
+        "图像线索卡",
+        "给出一张具有投射感的图片，讲述者根据画面联想到自己的故事或感受；侦探依据联想的叙述押注。",
+        "提供非文字入口，开放度更高、表达更自由，适合深入探索和自我投射。"
+      ]
+    },
+    {
+      "row": [
+        "三种玩法共享“表达—倾听—同理猜测—解释共鸣”主循环；差异仅在表达入口和叙事负荷。"
+      ]
+    },
+    {
+      "text": "2. 分玩法评价",
+      "heading": true
+    },
+    {
+      "text": "请在各单元格填写1—5分。",
+      "heading": false
+    },
+    {
+      "fields": [
+        {
+          "id": "play_1",
+          "label": "故事线索卡 · 规则清晰",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_1_suggestion",
+          "label": "故事线索卡 · 规则清晰：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_2",
+          "label": "故事线索卡 · 趣味参与",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_2_suggestion",
+          "label": "故事线索卡 · 趣味参与：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_3",
+          "label": "故事线索卡 · 教育价值",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_3_suggestion",
+          "label": "故事线索卡 · 教育价值：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_4",
+          "label": "故事线索卡 · 安全可控",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_4_suggestion",
+          "label": "故事线索卡 · 安全可控：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_5",
+          "label": "故事线索卡 · 总体适合",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_5_suggestion",
+          "label": "故事线索卡 · 总体适合：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_6",
+          "label": "回应线索卡 · 规则清晰",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_6_suggestion",
+          "label": "回应线索卡 · 规则清晰：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_7",
+          "label": "回应线索卡 · 趣味参与",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_7_suggestion",
+          "label": "回应线索卡 · 趣味参与：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_8",
+          "label": "回应线索卡 · 教育价值",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_8_suggestion",
+          "label": "回应线索卡 · 教育价值：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_9",
+          "label": "回应线索卡 · 安全可控",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_9_suggestion",
+          "label": "回应线索卡 · 安全可控：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_10",
+          "label": "回应线索卡 · 总体适合",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_10_suggestion",
+          "label": "回应线索卡 · 总体适合：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_11",
+          "label": "图像线索卡 · 规则清晰",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_11_suggestion",
+          "label": "图像线索卡 · 规则清晰：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_12",
+          "label": "图像线索卡 · 趣味参与",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_12_suggestion",
+          "label": "图像线索卡 · 趣味参与：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_13",
+          "label": "图像线索卡 · 教育价值",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_13_suggestion",
+          "label": "图像线索卡 · 教育价值：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_14",
+          "label": "图像线索卡 · 安全可控",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_14_suggestion",
+          "label": "图像线索卡 · 安全可控：修改建议",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "play_15",
+          "label": "图像线索卡 · 总体适合",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "play_15_suggestion",
+          "label": "图像线索卡 · 总体适合：修改建议",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "3. 三玩法结构评价",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "C1",
+          "label": "C1 由单一玩法改为三种玩法，能够有效回应试玩中“故事整合负担偏高”的问题。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "C1_suggestion",
+          "label": "C1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "C2",
+          "label": "C2 三种玩法差异明确，不会使规则体系显得重复或碎片化。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "C2_suggestion",
+          "label": "C2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "C3",
+          "label": "C3 三种玩法难度梯度合理。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "C3_suggestion",
+          "label": "C3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "C4",
+          "label": "C4 三种玩法均保留对情绪与需求的倾听、推测和验证，不偏离项目目标。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "C4_suggestion",
+          "label": "C4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "C5",
+          "label": "C5 三种玩法并存适合作为正式版的结构。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "C5_suggestion",
+          "label": "C5 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "D. 计分规则与“感触分”",
+      "heading": true
+    },
+    {
+      "text": "1. 现版本计分构成",
+      "heading": true
+    },
+    {
+      "row": [
+        "计分项目",
+        "功能说明",
+        "复评重点"
+      ]
+    },
+    {
+      "row": [
+        "筹码分",
+        "依据侦探对情绪和需求的押注命中情况获得基础分。",
+        "是否清晰、公平、易计算"
+      ]
+    },
+    {
+      "row": [
+        "共鸣分",
+        "倾听者：倾听、推测讲述者的情绪、需求，如果成功全部押注讲述者的暗牌，则给予倾听者分数。",
+        "是否强化倾听而非只追求猜中"
+      ]
+    },
+    {
+      "row": [
+        "",
+        "讲述者：表达是否能让他人形成理解或共鸣，如果自己的情绪、需求暗牌都有被押中，则讲述者获得共鸣分",
+        "是否鼓励清晰表达而不过度表演"
+      ]
+    },
+    {
+      "row": [
+        "感触分（新增）",
+        "玩家自愿分享由互动中的理解、感受或视角，交流后，讲述者可选择1位最懂我/最有启发的倾听者，讲述者和该倾听者均获得感触分；不以披露真实隐私为条件。",
+        "是否促进反思且不造成强迫表达"
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "D1",
+          "label": "D1 三类得分的定义与触发条件清楚，带领者和玩家能够准确区分。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D1_suggestion",
+          "label": "D1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D2",
+          "label": "D2 更新后的得分机会比试玩版更充分，能够减少“得分太难”的挫败感。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D2_suggestion",
+          "label": "D2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D3",
+          "label": "D3 计分规则兼顾倾听同理、讲述表达和反思分享。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D3_suggestion",
+          "label": "D3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D4",
+          "label": "D4 新增“感触分”能促进玩家表达新理解或多元视角，符合心理教育目标。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D4_suggestion",
+          "label": "D4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D5",
+          "label": "D5 感触分强调自愿且不以真实隐私披露为条件，安全边界清楚。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D5_suggestion",
+          "label": "D5 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D6",
+          "label": "D6 计分过程不会显著打断故事、讨论和共鸣交流。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D6_suggestion",
+          "label": "D6 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D7",
+          "label": "D7 计分复杂度与2—6人游戏规模相匹配。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D7_suggestion",
+          "label": "D7 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "D8",
+          "label": "D8 计分规则总体公平、可操作，适合进入正式版。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "D8_suggestion",
+          "label": "D8 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "2. 各计分项目处置：",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "T64_1",
+          "label": "筹码分",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T64_1_suggestion",
+          "label": "筹码分：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T64_2",
+          "label": "共鸣分",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T64_2_suggestion",
+          "label": "共鸣分：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T64_3",
+          "label": "感触分",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "保留",
+            "修改",
+            "删除"
+          ]
+        },
+        {
+          "id": "T64_3_suggestion",
+          "label": "感触分：建议表述或说明",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "E. 材料配置、人数与操作便利性",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "E1",
+          "label": "E1 独立规则书能够使玩家在示范后自行完成游戏，并降低带领者反复解释的需要。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "E1_suggestion",
+          "label": "E1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "E2",
+          "label": "E2 “情绪与需求简释”中的定义、说明足以支持理解。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "E2_suggestion",
+          "label": "E2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "E3",
+          "label": "E3 讲述者屏风能够保护暗牌选择、减少信息泄露并提升角色沉浸。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "E3_suggestion",
+          "label": "E3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "E4",
+          "label": "E4 将适用人数明确为2—6人，兼顾可启动性、互动丰富度和单局时长。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "E4_suggestion",
+          "label": "E4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "E5",
+          "label": "E5 正式游戏前设置一轮示范局，是必要且可行的。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "E5_suggestion",
+          "label": "E5 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "E6",
+          "label": "E6 修订后的整套材料便于在课堂、团体活动或心理主题活动中部署。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "E6_suggestion",
+          "label": "E6 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "E7. 材料必要性判断",
+      "heading": true
+    },
+    {
+      "text": "您认为以下材料是否均应进入正式版：",
+      "heading": false
+    },
+    {
+      "fields": [
+        {
+          "id": "T69_1",
+          "label": "玩家规则书",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "必要",
+            "可选",
+            "不需求"
+          ]
+        },
+        {
+          "id": "T69_1_suggestion",
+          "label": "玩家规则书：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T69_2",
+          "label": "情绪与需求简释书",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "必要",
+            "可选",
+            "不需求"
+          ]
+        },
+        {
+          "id": "T69_2_suggestion",
+          "label": "情绪与需求简释书：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T69_3",
+          "label": "讲述者屏风",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "必要",
+            "可选",
+            "不需求"
+          ]
+        },
+        {
+          "id": "T69_3_suggestion",
+          "label": "讲述者屏风：建议表述或说明",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "T69_4",
+          "label": "小型押注骰子",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "必要",
+            "可选",
+            "不需求"
+          ]
+        },
+        {
+          "id": "T69_4_suggestion",
+          "label": "小型押注骰子：建议表述或说明",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "F. 安全性、带领要求与应用边界",
+      "heading": true
+    },
+    {
+      "row": [
+        "拟写入规则书的底线：玩家可使用虚构、半虚构或观察到的故事；任何人可跳过题目或暂停；不追问现实隐私，不判断情绪“对错”，不嘲笑、不传播组内故事；出现明显不适时停止游戏并由带领者按活动预案处理。"
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "F1",
+          "label": "F1 设置跳过、暂停和退出权利，能够保障参与自愿性。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F1_suggestion",
+          "label": "F1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "F2",
+          "label": "F2 “不追问、不评价、不嘲笑、不外传”的小组约定具体且可执行。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F2_suggestion",
+          "label": "F2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "F3",
+          "label": "F3 感触分不与真实披露深度挂钩，能够避免奖励机制诱导隐私暴露。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F3_suggestion",
+          "label": "F3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "F4",
+          "label": "F4 由接受过规则培训的教师、辅导员、心理委员或活动带领者组织，更符合安全要求。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F4_suggestion",
+          "label": "F4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "F5",
+          "label": "F5 规则书对情绪不适、冲突或敏感内容的暂停与处理提示足够明确。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F5_suggestion",
+          "label": "F5 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "F6",
+          "label": "F6 游戏适合作为心理健康教育或团体体验工具，但不应替代个体评估与专业服务。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F6_suggestion",
+          "label": "F6 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "F7",
+          "label": "F7 修订版整体风险可控，具备进入下一阶段应用的条件。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "F7_suggestion",
+          "label": "F7 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "F8",
+          "label": "应用场景判断（可多选）",
+          "type": "multi",
+          "required": true,
+          "options": [
+            "心理健康教育课程",
+            "新生适应／班级活动",
+            "团体辅导或成长小组",
+            "心理委员／朋辈培训",
+            "校园心理主题活动",
+            "一般社团／团队活动",
+            "不建议在无带领者场景使用",
+            "其他"
+          ]
+        },
+        {
+          "id": "F8_other",
+          "label": "其他应用场景",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "第三部分　总体判断与定稿意见",
+      "heading": true
+    },
+    {
+      "text": "1. 总体评价",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "G1",
+          "label": "G1 本轮修订充分回应了第一轮专家咨询中的主要意见。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "G1_suggestion",
+          "label": "G1 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "G2",
+          "label": "G2 本轮修订充分回应了小范围试玩中发现的主要问题。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "G2_suggestion",
+          "label": "G2 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "G3",
+          "label": "G3 修订后的体系完整，词盘、玩法、计分和材料之间相互一致。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "G3_suggestion",
+          "label": "G3 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "G4",
+          "label": "G4 修订版兼具心理教育价值、趣味性、可操作性和安全性。",
+          "type": "score",
+          "required": true
+        },
+        {
+          "id": "G4_suggestion",
+          "label": "G4 修改建议（如评分≤3，请说明；选填）",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "2. 最终处置意见（单选）",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "final_decision",
+          "label": "最终处置意见（单选）",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "A：总体适合形成正式应用版本",
+            "B：小幅修改后定稿，无需再次进行整轮专家咨询",
+            "C：需较大修改，建议修订后再次提交专家复评",
+            "D：暂不建议进入下一阶段"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "3. 开放意见",
+      "heading": true
+    },
+    {
+      "fields": [
+        {
+          "id": "open_81",
+          "label": "（1）您认为本轮修订最成功、最应保留的部分是：",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "open_85",
+          "label": "（2）正式定稿前必须修改的问题是：",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "id": "open_90",
+          "label": "（3）其他意见或可用于论文方法与讨论部分的提醒：",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "text": "衷心感谢您的专业判断与持续支持",
+      "heading": false
+    },
+    {
+      "text": "——《心事侦探社》研究组",
+      "heading": false
+    }
+  ]
+}
